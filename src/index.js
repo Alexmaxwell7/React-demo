@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import './SignUpform'
+import Signup from "./SignUpform";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+class Login extends React.Component{
+  render() {
+    return (
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+       <form>
+         <div class="form-group">
+           <h1 style={{color:"blue", textAlign:"center"}}>Login</h1>
+          <label class="skills" for="subject">
+            Username
+          </label>
+          <input type="text" id="username"
+          class="form-control" required/>
+         </div>
+         <div class="form-group">
+           <label class="skills" for="Body">
+             Password
+           </label>
+           <input type="password" id="pwd" class="form-control" required/>
+         </div>
+         <input type="submit"
+         class="btn btn-primary"
+         value="Login"
+         id="navigation"/>
+       </form>
+       </div>
+
+       <Signup/>
+      </div>
+    )
+    
+  }
+
+ 
+}
+
+
+ReactDOM.render(<Login />,document.getElementById('root'))

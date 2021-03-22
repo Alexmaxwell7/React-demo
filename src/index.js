@@ -1,16 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// import { BrowserRouter as Router,Route} from '';
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.css';
-
+import './App';
+import Task from './task_one';
+import Task2 from './task_two';
+import Task3 from './task_third';
+import Task4 from './task_four';
 import './SignUpform'
 import Signup from "./SignUpform";
+// import App from "./App";
 
 class Login extends React.Component{
+
+ 
+
   render() {
     return (
       <div class="row">
         <div class="col-md-8 offset-md-2">
+        <Task/>
+        <Task2/>
+        <Task3/>
+        <Task4/>
        <form>
          <div class="form-group">
            <h1 style={{color:"blue", textAlign:"center"}}>Login</h1>
@@ -32,7 +45,6 @@ class Login extends React.Component{
          id="navigation"/>
        </form>
        </div>
-
        <Signup/>
       </div>
     )

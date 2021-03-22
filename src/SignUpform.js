@@ -55,6 +55,8 @@ class Signup extends React.Component{
 
          <button type="submit" class="btn btn-primary">Submit</button>       
             </form>
+
+        
         )
     }
 }

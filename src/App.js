@@ -1,41 +1,19 @@
+import React from 'react';
 import './App.css';
-import { useState } from 'react';
-import Axiox from 'axios'
-
+import "bootstrap/dist/css/bootstrap.css";
+import { Row, Col} from 'react-bootstrap';
+import LeftSide from "./LeftSide";
+import Menu from "./Menu";
+import RightSide from "./RightSide";
 function App() {
-  const [usernameReg, setUsernameReg]= useState('')
-  const [passwordReg, setPasswordReg]= useState('')
-
-  const register = () => {
-    Axiox.post("http://localhost:3001/register", {
-      username: usernameReg,
-      password: passwordReg,
-    }).then((response)=>{
-      console.log(response)
-    })
-  }
   return (
     <div className="App">
-      <div className="registration">
-        <h1>Register</h1>
-        <label>Username</label>
-        <input type="text" onChange={(e)=>{
-          setUsernameReg(e.target.value);
-        }} />
-        <label>password</label>
-        <input type="text"  onChange={(e)=>{
-          setPasswordReg(e.target.value);}}/>
-        <button onClick={register}> Register </button>
-      </div>
-      <div className="Login">
-        <h1>Login</h1>
-        <label>Username</label>
-        <input type="text"  placeholder="username"/>
-        <label>password</label>
-        <input type="text" placeholder="password" />
-        <button> Login </button>
-      </div>
-
+      <Menu />
+      <Row className="landing">
+        <Col ><LeftSide /></Col>
+        
+        <Col ><RightSide /></Col>
+      </Row>
     </div>
   );
 }

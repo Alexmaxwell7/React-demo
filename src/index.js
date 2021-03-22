@@ -10,7 +10,7 @@ import Task3 from './task_third';
 import Task4 from './task_four';
 import './SignUpform'
 import Signup from "./SignUpform";
-// import App from "./App";
+import App from "./App";
 
 class Login extends React.Component{
 
@@ -55,4 +55,4 @@ class Login extends React.Component{
 }
 
 
-ReactDOM.render(<Login />,document.getElementById('root'))
+ReactDOM.render(<App />,document.getElementById('root'))

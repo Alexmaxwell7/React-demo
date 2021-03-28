@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Button,Row,Col,Image} from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
 const LeftSide = () => {
  return (
@@ -19,7 +19,7 @@ const LeftSide = () => {
                  <Form.Control type="password" placeholder="Password" />
              </Form.Group>
              <br/>
-             <Button style={{float: 'left'}} color="#142c5c" className="float-left">LOGIN </Button>
+             <Button style={{float: 'left'}} color="#142c5c">LOGIN </Button>
          </Form>
          <br/>
          <br/>

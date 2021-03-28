@@ -7,25 +7,17 @@ const Menu = () => {
             <Navbar collapseOnSelect expand="lg" bg="white" >
                 <Container>
 
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/App">LOGIN</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link href="#features">DashBoard</Nav.Link>
                             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <NavDropdown.Item href="/task_one">Task One</NavDropdown.Item>
+                                <NavDropdown.Item href="/task_two">Task Two</NavDropdown.Item>
+                                <NavDropdown.Item href="/task_third">Task Three</NavDropdown.Item>
+                                <NavDropdown.Item href="/task_four">Task Four</NavDropdown.Item>
                             </NavDropdown>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-      </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
